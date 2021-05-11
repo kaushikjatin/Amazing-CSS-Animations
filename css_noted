@@ -65,7 +65,9 @@
 			This property contain various functions which we can apply like scaling , tranlate , rotate etc.
 			Use this link for info -> https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function
 
-
+6) Z-index
+			It only works on the positioned elements or flex-elements(i.e elements that are direct children of display:flex elements)
+			More the z-index , more will be its priority to remain on top.
 
 
 
