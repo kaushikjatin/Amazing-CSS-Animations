@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins' , sans-serif;
+}
+body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #131313;
+}
+.container
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    transform-style: preserve-3d;
+}
+
+.container .box
+ {
+     position: relative;
+     width: 300px;
+     height: 400px;
+     margin: 40px;
+     background: #232323;
+     border-radius: 20px;
+     transform-style: preserve-3d;
+ }
+
+ .container .box::before
+ {
+     content : 'NIKE';
+     position : absolute;
+     top: 20px;
+     left: 20px;
+     font-size: 5em;
+     font-weight: 900;
+     color: #fff;
+     font-style: italic;
+     opacity: 0;
+     transition : 1s;
+
+ }
+ .container .box::after
+ {
+     content : 'Shoes';
+     position : absolute;
+     bottom: 20px;
+     left: 20px;
+     font-size: 5em;
+     font-weight: 900;
+     color: #fff;
+     font-style: italic;
+     opacity: 0;
+     transition : 1s;
+
+ }
+
+ /* it means wheneve we hover on the box...apply these styles on the content before the box classed element */
+ 
+ .container .box:hover::after,
+ .container .box:hover::before
+ {
+    opacity: 0.3;
+ }
+
+ .container .box .name 
+ {
+     position: absolute;
+     top: 0;
+     left: 0;
+     text-align: center;
+     color: #fff;
+     width: 100%;
+     transform: translate3d(0,0,75px);
+     opacity: 0;
+     z-index: 10;
+ }
+
+ .container .box:hover .name 
+ {
+     transition: 0.5s;
+     top: 40px;
+     opacity: 1;
+
+ }
+
+ .container .box .buy 
+ {
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     color: #fff;
+     background: #333;
+     padding: 10px 25px;
+     border-radius: 30px;
+     text-decoration: none;
+     transform: translate3d(-50%,0,75px);
+     opacity: 0;
+     z-index: 10;
+ }
+
+ .container .box:hover .buy 
+ {
+     transition: 0.5s;
+     bottom: 40px;
+     opacity: 1;
+     
+ }
+
+ .container .box .circle 
+ {
+     position: absolute;
+     background: #fff;
+     height: 200px;
+     width: 200px;
+     border-radius: 50%;
+     top: 50%;
+     left: 50%;
+     transform:translate3d(-50%,-50%,50px);
+     z-index: 10;
+ }
+
+ .container .box .product 
+ {
+    position: absolute;
+    max-width: 250px;
+    top: 50%;
+    left: 50%;
+    z-index: 11;
+    transform: translate3d(-50%,-50%,50px) rotate(-15deg);
+ }

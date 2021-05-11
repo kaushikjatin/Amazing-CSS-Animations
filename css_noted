@@ -70,6 +70,27 @@
 			More the z-index , more will be its priority to remain on top.
 
 
+7) ::brfore 
+			The ::before selector inserts something before the content of each selected element(s).
+			eg-> body::before
+			{
+			 content: 'resd this'
+			}	this will append specified content befire the content of body...and apply the specified styles.
+
+8) Transition
+			Property smoothens the changing of the element styles on hover. Either you explicitly specify the property on which you want to apply transition or the transition will be applied to all the properties which changes on hover or any other mouse-event or any event.
+
+
+8) Flexbox 
+		display : flex ,,, it really means(display : block flex),, which means the parent container will be a block element and the childrem will take part in flex layout.
+		display : inline-flex ,, it really means that parent will be a inline element and children will take part in flex layout.
+		justify-content : This property is set to theelement whose displayis set flex. This property helps in deciding the spacing and aligmenet of children.It contols 
+							aligment on the main axis.
+		align-itmes : This is similar to the justify content. But it controls the alignment on the cross-axis.
+
+
+
+
 
 
 
