@@ -1,0 +1,81 @@
+1) All properties of parent are not inherited by the child eg-> border,background-image,display-type etc are not inherited.
+
+2) Setting height and width donot include margin,padding, border in it. It only include content. But you can change it by box-sizing='border-box' property.....what it does it....it include the padding and margin too to the height and the width.
+
+3) When you put an image inside a text .....then you use the 'vertical-align' property on the image to change the alignment of text along the width...normally the text lies along the bottom of image..but if you set vertcal-align as top...then the text lies along the top of the image...
+
+4) We can control the overflow of a block elemtn by the over-flow property.....Overflow property can be applied only on the block elements with a fixed height...otherwise the height would change and overflow wouldnot occur.It can have multiple values like-> hidden, scroll, visible,inherit etc.
+
+5) We know that setting the width and height of image mostly changes it's height to width ratio and make it to look dull,, hence we have 2 proprty to keep the aspect ratio and thr part of image we want to see...they are 'object-fit' and 'object-position'. These 2 properties can be applied either on an image or a video.
+
+6) Display properties of an element:
+   Block 				(new line		full width		have height and width)..remember whether you set width of a block element...the next element will start from a new line
+   Inline 				(same line		not full		no height and width)
+   Inline-Block 		(same line		not full		have height and width)
+   None					(It means when display is set to None,,,,it will not be rendered on page...i'e no space will be taken....but visibility="hidden" is different....in this					 the element is rendered but not visible...i.e it will take space. )
+
+
+7)Position property of an element:
+
+
+	Positioned element-> An element is said to be positioned when it's position is either reativer,fixed or absolute......
+	*Static 		(normal flow of the website,,no top,bottom, etc available)
+
+	*Relative (It will move relative to it's position and it donot allow anyone else to occupy it's previous position too)    
+					top 
+					bottom
+					left 
+					right
+	*Fixed     
+					top 
+					bottom
+					left 
+					right
+	*Absolute (It will move acc to nearest positioned parent,,,and if no positioned parent then it is moved w.r.t body.....the element leaves it's position as soon as it is marked absolute and another element takes it's place.....but remember that if none of left,right,top,bottom is set then also it's position is occupied by another element and th element then overlaps with the other element)    
+					top 
+					bottom
+					left 
+					right
+
+
+
+8) Align-itm and justify content works when the container is set flex
+		align-items: center; 					(set the element in vertical center)
+        justify-content: center;				(set the element in horizontal center)
+
+
+
+   																		****Properties Of CSS and Meanings****
+1) Box-Sizing
+			When we change height and width of element then, it donot include the margin , border etc into the height and width, so border box can help in that.
+
+
+2) Overflow 
+			It is only applicable to block elements with specified height.
+			Comes handy when our content is greater than the size of the element. SO in that case when can set overflow property and can select how we want to show overflowed part. 
+
+3) Min-Height
+			It set the min-height of the element. If content is smaller the height-of element is set to min0height. If the content is larger then the min-height property has no effect.
+
+4) Animation
+			It lets us to change an element gradually from one style to another. To specify animation we must speify the keyframes. The keyframes denote the styles which our element will take at certain time. For the animation ot work we have to first bind the element by the animation tag.
+			Use this link for more info -> https://www.w3schools.com/css/css3_animations.asp
+
+5) Transform 
+			This property contain various functions which we can apply like scaling , tranlate , rotate etc.
+			Use this link for info -> https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
