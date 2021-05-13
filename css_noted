@@ -89,6 +89,23 @@
 		align-itmes : This is similar to the justify content. But it controls the alignment on the cross-axis.
 
 
+9)********* (--)
+	style='--proprty_name:property_value'
+	using -- before any style will make a custom property and whose value can be accessed and used in the css file by the help of var().
+	eg-> <span style='--i:2'>
+	span
+	{
+	transform:rotate(var(i));
+	}
+
+
+10)box-shadow   refer here-> https://css-tricks.com/almanac/properties/b/box-shadow/
+		box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];
+
+
+11) filter:hue-rotate(10deg)
+			This function changes the colour rgb-values.You can consider that the value of a color which was at 60deg will be now at 70deg,,i/e suppose yellow will change in red.  The color values of all the children (of elements on which this filter-hue-rotate() is applied) will be changed.
+
 
 
 
